@@ -35,12 +35,15 @@
 			<yjs:SolidColorFill x:Key="1" color="#FFD2DEEE"/>
 			<yjs:SolidColorFill x:Key="2" color="#FFD2DEEE"/>
 			<yjs:SolidColorFill x:Key="3" color="#FFF0F4C3"/>
-			<yjs:Font x:Key="4" fontSize="8" fontFamily="Roboto"/>
+			<yjs:SolidColorFill x:Key="4" color="#FFF0F4C3"/>
 			<yjs:Font x:Key="5" fontSize="8" fontFamily="Roboto"/>
 			<yjs:Font x:Key="6" fontSize="8" fontFamily="Roboto"/>
 			<yjs:Font x:Key="7" fontSize="8" fontFamily="Roboto"/>
-			<yjs:SolidColorFill x:Key="8" color="#FFF0F4C3"/>
+			<yjs:Font x:Key="8" fontSize="8" fontFamily="Roboto"/>
 			<yjs:Font x:Key="9" fontSize="8" fontFamily="Roboto"/>
+			<yjs:Font x:Key="10" fontSize="8" fontFamily="Roboto"/>
+			<yjs:Font x:Key="11" fontSize="8" fontFamily="Roboto"/>
+			<yjs:SolidColorFill x:Key="12" color="#FFD2DEEE"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -50,7 +53,11 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Корзина</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -68,7 +75,11 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все товары]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 6}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -86,24 +97,6 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Главная</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 7}" textFill="BLACK" textSize="8"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d4">
-				<y:RectD X="-147.875" Y="-222.875" Width="50" Height="30"/>
-			</data>
-			<data key="d6">
-				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 8}"/>
-			</data>
-		</node>
-		<node id="n3">
-			<data key="d3">
-				<x:List>
-					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text>Приветствие!</y:Label.Text>
-						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
 								<yjs:DefaultLabelStyle.font>
 									<yjs:Font fontSize="8" fontFamily="Roboto"/>
@@ -114,7 +107,25 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="-147.875" Y="-192.875" Width="150" Height="30"/>
+				<y:RectD X="-147.875" Y="-222.875" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 4}"/>
+			</data>
+		</node>
+		<node id="n3">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Приветствие!</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-147.875" Y="-175.75" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -126,13 +137,17 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все права защищены. 2019]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 9}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="-147.875" Y="-162.875" Width="150" Height="30"/>
+				<y:RectD X="-147.875" Y="-15.75" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -144,11 +159,7 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Корзина</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="8" fontFamily="Roboto"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 9}" textFill="BLACK" textSize="8"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -188,11 +199,7 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Главная</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="8" fontFamily="Roboto"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 10}" textFill="BLACK" textSize="8"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -242,7 +249,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="343.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="554.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 3}"/>
@@ -254,20 +261,16 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все товары]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="8" fontFamily="Roboto"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 11}" textFill="BLACK" textSize="8"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="293.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="504.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
-				<demostyle:FlowchartNodeStyle type="process" fill="#FFD2DEEE"/>
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 12}"/>
 			</data>
 		</node>
 		<node id="n11">
@@ -286,7 +289,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="243.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="454.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -298,13 +301,17 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все права защищены. 2019]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 4}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="243.125" Y="-15.75" Width="150" Height="30"/>
+				<y:RectD X="454.625" Y="-22.0625" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -382,11 +389,7 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Добавить в корзину]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="8" fontFamily="Roboto"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 8}" textFill="BLACK" textSize="8"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -414,7 +417,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="293.125" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="504.625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -436,7 +439,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="293.125" Y="-61.8125" Width="50" Height="30"/>
+				<y:RectD X="504.625" Y="-68.125" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -458,7 +461,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="243.125" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="454.625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -480,7 +483,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="343.125" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="554.625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -502,7 +505,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="343.125" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="554.625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -524,7 +527,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="293.125" Y="-91.8125" Width="50" Height="30"/>
+				<y:RectD X="504.625" Y="-98.125" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -546,7 +549,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="293.125" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="504.625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -568,7 +571,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="243.125" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="454.625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -590,7 +593,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="455.5625" Y="-222.875" Width="150" Height="30"/>
+				<y:RectD X="667.0625" Y="-205.75" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 3}"/>
@@ -602,13 +605,13 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все права защищены. 2019]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 4}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 7}" textFill="BLACK" textSize="8"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="455.5625" Y="-15.75" Width="150" Height="30"/>
+				<y:RectD X="667.0625" Y="-22.0625" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -630,7 +633,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="505.5625" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="717.0625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -652,7 +655,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="505.5625" Y="-61.8125" Width="50" Height="30"/>
+				<y:RectD X="717.0625" Y="-68.125" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -674,7 +677,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="455.5625" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="667.0625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -696,7 +699,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="555.5625" Y="-169.4375" Width="50" Height="30"/>
+				<y:RectD X="767.0625" Y="-175.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -718,7 +721,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="555.5625" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="767.0625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -740,7 +743,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="505.5625" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="717.0625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -762,7 +765,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="455.5625" Y="-139.4375" Width="50" Height="30"/>
+				<y:RectD X="667.0625" Y="-145.75" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -784,7 +787,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="505.5625" Y="-100.625" Width="50" Height="30"/>
+				<y:RectD X="717.0625" Y="-106.9375" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
@@ -796,13 +799,17 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Корзина</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="750.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="961.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -814,13 +821,17 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все товары]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 6}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="700.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="911.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -832,16 +843,20 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>Главная</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 7}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="650.125" Y="-222.875" Width="50" Height="30"/>
+				<y:RectD X="861.625" Y="-229.1875" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
-				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 8}"/>
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 4}"/>
 			</data>
 		</node>
 		<node id="n38">
@@ -860,7 +875,7 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="650.125" Y="-192.875" Width="150" Height="30"/>
+				<y:RectD X="861.625" Y="-175.75" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -872,13 +887,17 @@
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Все права защищены. 2019]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 9}" textFill="BLACK" textSize="8"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="650.125" Y="-162.875" Width="150" Height="30"/>
+				<y:RectD X="861.625" Y="-22.0625" Width="150" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
@@ -900,10 +919,398 @@
 				</x:List>
 			</data>
 			<data key="d4">
-				<y:RectD X="555.5625" Y="-100.625" Width="50" Height="30"/>
+				<y:RectD X="767.0625" Y="-106.9375" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
 				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n41">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Template</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-359.375" Y="-222.875" Width="150" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="#FFD2EED5"/>
+			</data>
+		</node>
+		<node id="n42">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Page</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-359.375" Y="-192.875" Width="150" Height="180.5625"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="#FFEED2ED"/>
+			</data>
+		</node>
+		<node id="n43">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Template</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 5}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-359.375" Y="-12.3125" Width="150" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="#FFD2EED5"/>
+			</data>
+		</node>
+		<node id="n44">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Посмотреть описание]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 6}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="147.625" Y="-98.125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n45">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Посмотреть описание]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 6}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="147.625" Y="-175.75" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n46">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Описание товара]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="257.8125" Y="-178.78125" Width="150" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 3}"/>
+			</data>
+		</node>
+		<node id="n47">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Все права защищены. 2019]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 7}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="257.8125" Y="-15.75" Width="150" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
+			</data>
+		</node>
+		<node id="n48">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Название товара]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="307.8125" Y="-148.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n49">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Название бренда]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="257.8125" Y="-148.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n50">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Модель</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="357.8125" Y="-148.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n51">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Фото</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="257.8125" Y="-118.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n52">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Дополнительно</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="357.8125" Y="-118.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n53">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Цена</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" textFill="BLACK" textSize="8">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="8" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="307.8125" Y="-118.78125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n54">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Добавить в корзину]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 8}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="307.8125" Y="-68.125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n55">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Корзина</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 9}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="357.8125" Y="-229.4375" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
+			</data>
+		</node>
+		<node id="n56">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Главная</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 10}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="257.8125" Y="-229.4375" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n57">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Все товары]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 11}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="307.8125" Y="-229.4375" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 12}"/>
+			</data>
+		</node>
+		<node id="n58">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Корзина</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 9}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="767.0625" Y="-246.8125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 1}"/>
+			</data>
+		</node>
+		<node id="n59">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>Главная</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 10}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="667.0625" Y="-246.8125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 2}"/>
+			</data>
+		</node>
+		<node id="n60">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text><![CDATA[Все товары]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" wrapping="WORD" clipText="false" font="{y:GraphMLReference 11}" textFill="BLACK" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="717.0625" Y="-246.8125" Width="50" Height="30"/>
+			</data>
+			<data key="d6">
+				<demostyle:FlowchartNodeStyle type="process" fill="{y:GraphMLReference 12}"/>
 			</data>
 		</node>
 	</graph>
