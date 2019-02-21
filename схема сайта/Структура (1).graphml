@@ -41,16 +41,17 @@
 			<yjs:PanelNodeStyle x:Key="3" color="{y:GraphMLReference 1}" labelInsetsColor="{y:GraphMLReference 1}"/>
 			<y:RatioAnchoredLabelModelParameter x:Key="4" LayoutRatio="0.5,1" LayoutOffset="0,10" LabelRatio="0.5,0"/>
 			<yjs:Color x:Key="5" value="#FFD6D2EE"/>
-			<yjs:Font x:Key="6" fontSize="18"/>
-			<yjs:SolidColorFill x:Key="7" color="#FFEED2EA"/>
-			<yjs:DefaultLabelStyle x:Key="8" textFill="BLACK">
+			<yjs:SolidColorFill x:Key="6" color="#FFEED2EA"/>
+			<yjs:DefaultLabelStyle x:Key="7" textFill="BLACK">
 				<yjs:DefaultLabelStyle.font>
 					<yjs:Font fontSize="12"/>
 				</yjs:DefaultLabelStyle.font>
 			</yjs:DefaultLabelStyle>
-			<yjs:SolidColorFill x:Key="9" color="#FFB7C9E3"/>
-			<yjs:Stroke x:Key="10" fill="BLACK" dashStyle="Dash"/>
-			<yjs:PolylineEdgeStyle x:Key="11" smoothingLength="85">
+			<yjs:SolidColorFill x:Key="8" color="#FFB7C9E3"/>
+			<yjs:Stroke x:Key="9" fill="BLACK" dashStyle="Dash"/>
+			<yjs:Font x:Key="10" fontSize="18"/>
+			<yjs:SolidColorFill x:Key="11" color="#FFD2EED5"/>
+			<yjs:PolylineEdgeStyle x:Key="12" smoothingLength="85">
 				<yjs:PolylineEdgeStyle.stroke>
 					<yjs:Stroke fill="BLACK" thickness="0.75"/>
 				</yjs:PolylineEdgeStyle.stroke>
@@ -88,6 +89,11 @@
 			<port name="p2"/>
 			<port name="p3"/>
 			<port name="p4">
+				<data key="d15">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9838709677419355"/>
+				</data>
+			</port>
+			<port name="p5">
 				<data key="d15">
 					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9838709677419355"/>
 				</data>
@@ -201,11 +207,7 @@
 					<y:Label LayoutParameter="{y:GraphMLReference 4}">
 						<y:Label.Text>config.php</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle textFill="BLACK" textSize="18">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="18"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK" textSize="18"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -214,7 +216,7 @@
 				<y:RectD X="-1390" Y="220" Width="60" Height="60"/>
 			</data>
 			<data key="d6">
-				<uml:UMLNoteStyle fill="#FFD2EED5" stroke="BLACK"/>
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 11}" stroke="BLACK"/>
 			</data>
 			<port name="p0"/>
 		</node>
@@ -318,7 +320,11 @@
 					<y:Label LayoutParameter="{y:GraphMLReference 4}">
 						<y:Label.Text>main.php</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 6}" textFill="BLACK" textSize="18"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="18">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="18"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -327,7 +333,7 @@
 				<y:RectD X="-640" Y="-10" Width="60" Height="60"/>
 			</data>
 			<data key="d6">
-				<uml:UMLNoteStyle fill="{y:GraphMLReference 7}" stroke="BLACK"/>
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 6}" stroke="BLACK"/>
 			</data>
 			<port name="p0"/>
 		</node>
@@ -465,7 +471,11 @@
 					<y:Label LayoutParameter="{y:GraphMLReference 4}">
 						<y:Label.Text>main.php</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 6}" textFill="BLACK" textSize="18"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="18">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="18"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -474,14 +484,14 @@
 				<y:RectD X="-640" Y="-240" Width="60" Height="60"/>
 			</data>
 			<data key="d6">
-				<uml:UMLNoteStyle fill="{y:GraphMLReference 7}" stroke="BLACK"/>
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 6}" stroke="BLACK"/>
 			</data>
 			<port name="p0"/>
 		</node>
 		<node id="n17">
 			<data key="d3">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 8}">
+					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 7}">
 						<y:Label.Text><![CDATA[+ init()]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -490,14 +500,14 @@
 				<y:RectD X="-1235" Y="-95" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
-				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 9}" stroke="{y:GraphMLReference 10}"/>
+				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 8}" stroke="{y:GraphMLReference 9}"/>
 			</data>
 			<port name="p0"/>
 		</node>
 		<node id="n18">
 			<data key="d3">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 8}">
+					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 7}">
 						<y:Label.Text><![CDATA[+ render()]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -506,14 +516,14 @@
 				<y:RectD X="-1235" Y="15" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
-				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 9}" stroke="{y:GraphMLReference 10}"/>
+				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 8}" stroke="{y:GraphMLReference 9}"/>
 			</data>
 			<port name="p0"/>
 		</node>
 		<node id="n19">
 			<data key="d3">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 8}">
+					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 7}">
 						<y:Label.Text><![CDATA[+ DB()]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -522,7 +532,26 @@
 				<y:RectD X="-1235" Y="125" Width="50" Height="30"/>
 			</data>
 			<data key="d6">
-				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 9}" stroke="{y:GraphMLReference 10}"/>
+				<x0:ErdNodeStyle type="Attribute" fill="{y:GraphMLReference 8}" stroke="{y:GraphMLReference 9}"/>
+			</data>
+			<port name="p0"/>
+		</node>
+		<node id="n20">
+			<data key="d3">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 4}">
+						<y:Label.Text>config_example.php</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK" textSize="18"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d4">
+				<y:RectD X="-1390" Y="340" Width="60" Height="60"/>
+			</data>
+			<data key="d6">
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 11}" stroke="BLACK"/>
 			</data>
 			<port name="p0"/>
 		</node>
@@ -533,7 +562,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e1" source="n6" target="n0" sourceport="p0" targetport="p1">
@@ -543,7 +572,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e2" source="n4" target="n0" sourceport="p0" targetport="p2">
@@ -553,7 +582,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e3" source="n7" target="n0" sourceport="p0" targetport="p3">
@@ -563,7 +592,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e4" source="n5" target="n0" sourceport="p0" targetport="p4">
@@ -573,7 +602,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e5" source="n14" target="n2" sourceport="p0" targetport="p0">
@@ -583,7 +612,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e6" source="n15" target="n2" sourceport="p0" targetport="p1">
@@ -593,7 +622,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e7" source="n10" target="n14" sourceport="p0" targetport="p1">
@@ -603,7 +632,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e8" source="n11" target="n14" sourceport="p0" targetport="p2">
@@ -613,7 +642,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e9" source="n9" target="n14" sourceport="p0" targetport="p3">
@@ -623,7 +652,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e10" source="n8" target="n14" sourceport="p0" targetport="p4">
@@ -633,7 +662,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e11" source="n12" target="n14" sourceport="p0" targetport="p5">
@@ -643,7 +672,7 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e12" source="n13" target="n14" sourceport="p0" targetport="p6">
@@ -653,27 +682,48 @@
 				</x:List>
 			</data>
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e13" source="n16" target="n15" sourceport="p0" targetport="p1">
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e14" source="n19" target="n7" sourceport="p0" targetport="p1">
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e15" source="n18" target="n4" sourceport="p0" targetport="p1">
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
 			</data>
 		</edge>
 		<edge id="e16" source="n17" target="n6" sourceport="p0" targetport="p1">
 			<data key="d12">
-				<y:GraphMLReference ResourceKey="11"/>
+				<y:GraphMLReference ResourceKey="12"/>
+			</data>
+		</edge>
+		<edge id="e17" source="n20" target="n0" sourceport="p0" targetport="p5">
+			<data key="d11">
+				<x:List>
+					<y:Bend Location="-1510,370"/>
+					<y:Bend Location="-1510,370"/>
+					<y:Bend Location="-1510,-250"/>
+					<y:Bend Location="-1510,-250"/>
+					<y:Bend Location="-1510,-260"/>
+				</x:List>
+			</data>
+			<data key="d12">
+				<yjs:PolylineEdgeStyle smoothingLength="85">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" thickness="0.75"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow type="NONE" scale="1.2" stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 	</graph>
